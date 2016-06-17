@@ -38,4 +38,10 @@ public class MainActivityTest {
         Log.v("TAG", "Test sanity");
         onView(withId(android.R.id.content)).check(matches(isDisplayed()));
     }
+
+    @Test
+    public void testFail() {
+        Log.v("TAG", "Test sanity");
+        onView(withId(android.R.id.checkbox)).check(matches(isDisplayed()));
+    }
 }
